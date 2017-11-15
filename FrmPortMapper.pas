@@ -5,7 +5,8 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, IdBaseComponent, IdComponent,
-  IdCustomTCPServer, IdMappedPortTCP, Vcl.StdCtrls,  ShellAPI, Vcl.Menus;
+  IdCustomTCPServer, IdMappedPortTCP, Vcl.StdCtrls,  ShellAPI, Vcl.Menus,
+  Vcl.ComCtrls;
 
 const
   WM_ICONTRAY = WM_USER + 555;
@@ -28,6 +29,7 @@ type
     N3: TMenuItem;
     A1: TMenuItem;
     N4: TMenuItem;
+    StatusBar1: TStatusBar;
     procedure Button1Click(Sender: TObject);
     procedure Button2Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -54,7 +56,7 @@ implementation
 
 procedure TForm1.A1Click(Sender: TObject);
 begin
-ShowMessage('This application is written by Ersin Fidan.' + chr(10) +' E-Mail : ersinfidan@gmail.com');
+Application.MessageBox('This application is written by Ersin Fidan.' + chr(10) +' E-Mail : ersinfidan@gmail.com','About',MB_ICONINFORMATION+MB_OK);
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
@@ -63,11 +65,13 @@ begin
   IdMappedPortTCP1.MappedPort := StrToInt(Edit2.Text);
   IdMappedPortTCP1.DefaultPort := StrToInt(Edit3.Text);;
   IdMappedPortTCP1.Active :=  True;
+  StatusBar1.Panels[0].Text:='Status = Active';
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
 IdMappedPortTCP1.Active :=  False;
+StatusBar1.Panels[0].Text:='Status = Passive';
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);

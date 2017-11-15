@@ -4,7 +4,7 @@ object Form1: TForm1
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
   Caption = 'PortMapper'
-  ClientHeight = 141
+  ClientHeight = 151
   ClientWidth = 280
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -81,6 +81,20 @@ object Form1: TForm1
     Height = 21
     Alignment = taRightJustify
     TabOrder = 2
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 132
+    Width = 280
+    Height = 19
+    Panels = <
+      item
+        Text = 'Status = Passive'
+        Width = 50
+      end>
+    ExplicitLeft = 96
+    ExplicitTop = 136
+    ExplicitWidth = 0
   end
   object IdMappedPortTCP1: TIdMappedPortTCP
     Bindings = <>
