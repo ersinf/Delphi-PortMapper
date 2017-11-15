@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.257,C:\Users\ERSINFI\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\01DATA\DelphiProjects\FrmPortMapper.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.759,C:\Users\ERSINFI\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\01DATA\DelphiProjects\PortMapper.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.952,=C:\Users\ERSINFI\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.257,C:\Users\ERSINFI\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\01DATA\DelphiProjects\FrmPortMapper.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.725,=C:\Users\ERSINFI\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>
